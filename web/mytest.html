@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'/>
+		<title>Colorbox Examples</title>
+		
+		<link rel="stylesheet" href="colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+			//	$(".iframe").colorbox({iframe:true, width:"910px", height:"410px"});
+				
+				//Example of preserving a JavaScript event for inline calls.
+			
+			});
+		</script>
+	</head>
+	<body>
+		<p><a class='iframe' href="http://app.yralup.com"></a></p>
+		
+                
+                <script>
+    $(document).ready(function() {
+        //For url
+     //  $(".iframe").colorbox({href:"http://app.yralup.com", open:true});
+	 window.setInterval(function(){
+		 $(".iframe").colorbox({href:"http://app.yralup.com/events/images/MIvsKKR.jpg", open:true,transition:'elastic', });
+		 window.setTimeout(function() {
+    $.colorbox.close();
+}, 10000);
+		 },10000);
+	 
+	 
+//	   window.setTimeout("$.colorbox({href:'http://app.yralup.com', width:500, height: 300,open:true});", 3000);
+//window.setTimeout(function() {
+//    $.colorbox.close();
+//}, 15000);
+        //For link
+   //     $("a.example").colorbox({open:true});
+
+        //For delay
+   //     setTimeout("$(".iframe").colorbox({href:'http://app.yralup.com', width:500, height: 300,open:true});", 3000);
+
+        //For inline
+    //    $.fn.colorbox({inline:true, width: 660, height: 405, href:"#example"});
+});
+</script>
+	</body>
+	
+</html>
